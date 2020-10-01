@@ -4,9 +4,17 @@
   <meta charset="utf-8">
   <title>Петя лох</title>
   <style>
+    petya_square
   </style>
  </head>
  <body>
-  <p>Петя лох</p>
+   <button id="btn" class="petya_square"><p id="text">Петя лох</p></button>
+   <script>
+     let a = 1;
+     'use strict';
+     btn.addEventListener('click', function(){
+       text.innerHTML = "Петя лох: x" + a++;
+     })
+   </script>
  </body>
 </html>
