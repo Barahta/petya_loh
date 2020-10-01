@@ -4,12 +4,25 @@
   <meta charset="utf-8">
   <title>Петя лох</title>
   <style>
-    petya_square
+    .petya_square{
+      background-color: #32CD32;
+      width: 100px;
+      height: 100px;
+      border: 3px darkgreen solid;
+      border-radius: 200px;
+      color: darkgreen;
+      box-shadow: 0px 7px;
+    }
+    .petya_square:active{
+      box-shadow: 0 3px;
+      transform: translateY(6px);
+    }
   </style>
  </head>
  <body>
    <button id="btn" class="petya_square"><p id="text">Петя лох</p></button>
    <script>
+     alert("ПЕТЯ ЛОХ");
      let a = 1;
      'use strict';
      btn.addEventListener('click', function(){
