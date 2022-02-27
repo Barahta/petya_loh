@@ -14,12 +14,12 @@
     <img src="meg.jpg">
     <p>А хотя знаете, я думаю стоит вернуть:</p>
     <button id="btn">Петя лох?</button>
-    <h1 id="text"></h1>
+    <h1 id="text">0</h1>
     <script>
         let btn = document.querySelector("#btn");
-        let txt = document.querySelector("#text");
-        btn.addEventListener("click", (){
-                             txt.innerHTML = txt.innerHTML + 1;
+        let txt1 = document.querySelector("#text");
+        btn.addEventListener("click", ()=>{
+                             txt1.innerHTML = Number(txt1.innerHTML) + 1;
                              });
     </script>
 </body>
