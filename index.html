@@ -13,7 +13,15 @@
     <p>Вот вам тянка, скажите класс, да?</p>
     <img src="meg.jpg">
     <p>А хотя знаете, я думаю стоит вернуть:</p>
-    <button>Петя лох?</button>
+    <button id="btn">Петя лох?</button>
+    <h1 id="text"></h1>
+    <script>
+        let btn = document.querySelector("#btn");
+        let txt = document.querySelector("#text");
+        btn.addEventListener("click", (){
+                             txt.innerHTML = txt.innerHTML + 1;
+                             });
+    </script>
 </body>
 
 </html>
